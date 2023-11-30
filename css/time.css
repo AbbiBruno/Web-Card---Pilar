@@ -1,0 +1,102 @@
+
+    * {
+        box-sizing: border-box;
+        border: 0px;
+        padding: 0px;
+      }
+
+
+
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las columnas se envuelvan cuando no haya suficiente espacio */
+          
+        }
+   
+        .position{
+            flex: 1; /* Hace que las columnas se expandan para llenar el espacio disponible */
+            width: calc(25% - 20px); /* Ajusta el ancho de cada columna según sea necesario, considerando el margen */
+            margin: 10px; /* Ajusta el margen entre las columnas según sea necesario */
+            box-sizing: border-box; /* Incluye el padding y el borde en el ancho de la columna */
+        }
+      
+      .countdown {
+        display: flex;
+        flex-wrap: wrap; 
+      }
+      
+      .countdown span {
+        color: #898787;
+        background-color: #f3f3f3ab;
+        font-size: 15px;
+      }
+      
+      .countdown div {
+        display: grid;
+        place-items: center;
+        padding: 10px;
+      }
+      
+      .reloj {
+        display: grid;
+        place-items: center;
+        border: solid 1px rgb(241, 241, 241);
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        color: rgb(245, 245, 245);
+        font-size: 3rem;
+        font-weight: bold;
+        background-color: #7b7b79;
+      }
+
+
+
+      @media (max-width: 730px) {
+
+        .container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las columnas se envuelvan cuando no haya suficiente espacio */
+          
+        }
+   
+        .position{
+            flex: 1; /* Hace que las columnas se expandan para llenar el espacio disponible */
+            width: calc(25% - 20px); /* Ajusta el ancho de cada columna según sea necesario, considerando el margen */
+            margin: 10px; /* Ajusta el margen entre las columnas según sea necesario */
+            box-sizing: border-box; /* Incluye el padding y el borde en el ancho de la columna */
+       
+        }
+        .palabrasCount{
+            margin-left: 3%;
+        }
+
+
+        .reloj {
+            float: left;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            color: #411616;
+            font-size: 18px;
+            font-weight: bold;
+            background: rgb(155, 165, 10);
+      background: linear-gradient(90deg, rgb(245, 245, 240) 0%, rgba(246, 225, 240, 0.781) 48%, rgba(223, 248, 213, 0) 100%);
+          }
+          
+          .countdown {
+            margin-top: -25%;
+            display: flex;
+            justify-content:center;
+            width: 80%;
+            flex-wrap: wrap;
+          }
+        .gifFlores{
+            display: flex;
+            flex-wrap: wrap; 
+            height: 100px;
+            width: 100px;
+         
+        }
+    
+    }
